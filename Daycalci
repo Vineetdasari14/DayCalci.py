@@ -1,0 +1,8 @@
+def countdown_in_days(days):
+    hours= int(days* 24)
+    minutes= int(((days * 24) - hours) * 60)
+    seconds= int((((days*24) - hours)*60 - minutes) *60)
+    return hours, minutes, seconds
+
+h, m, s = countdown_in_days(1.53) 
+print(str(h) + " Hours", str(m) + " Minutes", str(s) + " Seconds")
